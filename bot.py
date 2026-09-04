@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os
 
 # Replace with your specific Discord User ID and Bot Token
 TARGET_USER_ID = 299927073345110016  
