@@ -3,7 +3,8 @@ from discord.ext import commands
 import os
 
 # Replace with your specific Discord User ID and Bot Token
-TARGET_USER_ID = 299927073345110016 
+TARGET_USER_ID1 = 299927073345110016 
+TARGET_USER_ID2 = 705230501786681375
 BOT_TOKEN = os.environ.get('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
@@ -19,7 +20,7 @@ async def on_ready():
 @bot.event
 async def on_member_ban(guild: discord.Guild, user: discord.User):
     # Check if the banned user matches the targeted user ID
-    if user.id == TARGET_USER_ID:
+    if user.id == TARGET_USER_ID1 or TARGET_USER_ID2:
         try:
             await guild.unban(user, reason="Automated joke-ban reversal.")
             print(f"Successfully unbanned {user.name} from {guild.name}.")
