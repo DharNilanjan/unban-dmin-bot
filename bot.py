@@ -3,7 +3,7 @@ from discord.ext import commands
 
 # Replace with your specific Discord User ID and Bot Token
 TARGET_USER_ID = 299927073345110016  
-BOT_TOKEN = 'MTU0NTIyNDUzOTEwMzgzMDA3Ng.Gk0gbb.j9fi8K-AU83tm-zHvy7AOBrFN38xxI894yS8ik'
+BOT_TOKEN = os.environ.get('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 intents.moderation = True  # Required to track ban/unban events
