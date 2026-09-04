@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 
 # Replace with your specific Discord User ID and Bot Token
-TARGET_USER_ID = 299927073345110016  
+TARGET_USER_ID = 324537996688752641  
 BOT_TOKEN = os.environ.get('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
